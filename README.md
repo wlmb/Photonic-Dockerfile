@@ -8,6 +8,11 @@ You may build a docker image with the command
     $ docker build -t photonic https://github.com/wlmb/Photonic-Dockerfile.git
 
 (replace photonic with whatever name you choose for your image).
+If you prefer not to download the image on which Photonic is based,
+wlmb/perldatalanguage, from dockerhub, you may build it with
+
+    $ docker build -t perldatalanguage https://github.com/wlmb/PDL-Dockerfile.git
+    $ docker build -t photonic perldatalanguage
 
 Then, you may run the image with the following commands:
 
@@ -27,7 +32,7 @@ run an interactive pdl interpreter as follows
 
 and run Photonic programs, either standalone or within the interpreter.
 
-    pdl> use  pdl> use Photonic::Geometry::FromB; #load some Photonic modules
+    pdl> use Photonic::Geometry::FromB; #load some Photonic modules
     pdl> use Photonic::LE::NR2::EpsTensor;
     pdl> $b=zeroes(51,51,51)->rvals<13; #cubic lattice of spheres
     pdl> $g=Photonic::Geometry::FromB->new(B=>$b); #initialize geometry object
