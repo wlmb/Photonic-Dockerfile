@@ -42,5 +42,5 @@ and run Photonic programs, either standalone or within the interpreter.
     pdl> print $eps->evaluate($epsA, $epsB); #dielectric function of cubic lattice of metallic spheres
 
 ## Authors:
-   Merlyn Jaqueline Juárez Gutiérrez @MerlynJJ
-   Luis Mochán  @wlmb
+   - Merlyn Jaqueline Juárez Gutiérrez @MerlynJJ
+   - Luis Mochán  @wlmb
