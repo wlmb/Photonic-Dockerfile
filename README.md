@@ -1,7 +1,7 @@
 # Photonic-Dockerfile
 Dockerfile to build a docker Photonic image starting from a perldatalanguage container.
 
-## Use
+## Use:
 
 You may build a docker image with the command
 
@@ -40,3 +40,7 @@ and run Photonic programs, either standalone or within the interpreter.
     pdl> $epsA=1+0.0*i(); #dielectric function of air
     pdl> $epsB=-10+.1*i(); #some metallic response
     pdl> print $eps->evaluate($epsA, $epsB); #dielectric function of cubic lattice of metallic spheres
+
+## Authors:
+   Merlyn Jaqueline Juárez Gutiérrez @MerlynJJ
+   Luis Mochán  @wlmb
